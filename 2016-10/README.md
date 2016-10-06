@@ -3,7 +3,7 @@
 ## 目录
 * [创建 XMLHttpRequest 对象](#创建 XMLHttpRequest 对象)
 * [向服务器发送请求](#向服务器发送请求)
-* [异步 等待](#异步 等待)
+* [异步等待](#异步等待)
 * [获得服务器的响应](#获得服务器的响应)
 *
 
@@ -55,7 +55,7 @@ AJAX
 	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	xmlhttp.send("fname=Henry&lname=Ford");
 
-异步 等待
+异步等待
 ---------
 
 -当使用 async=true 时，请规定在响应处于 onreadystatechange 事件中的就绪状态时执行的函数：
@@ -75,9 +75,9 @@ AJAX
 -当然 也有false 的情况， 但.
 	我们不推荐使用 async=false，但是对于一些小型的请求，也是可以的。
 
-	请记住，JavaScript 会等到服务器响应就绪才继续执行。如果服务器繁忙或缓慢，应用程序会挂起或停止。
+请记住，JavaScript 会等到服务器响应就绪才继续执行。如果服务器繁忙或缓慢，应用程序会挂起或停止。
 
-	注意：当您使用 async=false 时，请不要编写 [onreadystatechange](#onreadystatechange) 函数 - 把代码放到 send() 语句后面即可：
+注意：当您使用 async=false 时，请不要编写 [onreadystatechange](#onreadystatechange) 函数 - 把代码放到 send() 语句后面即可：
 
 ```
 	xmlhttp.open("GET","ajax_info.txt",false);
